@@ -1,4 +1,4 @@
-#foo = "foo";            // Error: Invalid or unexpected token
+#foo = "foo";            // Error: Private names are not allowed outside of class bodies
 
 class A {
     #bar = "bar";       // OK
