@@ -3,5 +3,5 @@ class A {
 }
 
 class A {
-    #constructor = 5       // Error: `#constructor` is reserved.
+    #constructor: number = 5       // Error: `#constructor` is reserved.
 }

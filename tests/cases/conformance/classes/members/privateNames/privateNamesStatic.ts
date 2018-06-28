@@ -1,12 +1,12 @@
 class A {
-    static #a;          // OK
+    static #a: number | null;          // OK
     constructor () {
-        A.#a = 5;        // OK
+        A.#a = 5;                      // OK
     }
 }
 
 class B {
     constructor () {
-        B.#b = 5;        // Error: private name `#b` was not declared in the class body
+        B.#b: number = 5;              // Error: private name `#b` was not declared in the class body
     }
 }
